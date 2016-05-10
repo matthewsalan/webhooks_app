@@ -19,11 +19,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :development do
+  gem 'spring'
+  gem 'web-console'
+end
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails'
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
 end
 
